@@ -99,12 +99,31 @@
   max-height: 568px;
 }
 
+.header__footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  align-items: center; /* Alinea verticalmente en el centro */
+  padding: 20px; /* Ajusta el espaciado según sea necesario */
+  width: 100%;
+}
+
 .header__footer {
-  position: absolute;
-  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.header__paragraph-Shedule {
+  margin: 5px 0; /* Espaciado entre los párrafos */
+  font-size: 16px;
+  line-height: 0.7;
 }
 
 .header__paragraph {
-  margin: 5px 0; /* Espaciado entre los párrafos */
-  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__paragraph {
+  text-align: right;
 }
