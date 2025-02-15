@@ -94,7 +94,6 @@
 }
 
 .header__image {
-  position: absolute; /* Permite posicionar la imagen de forma precisa */
   right: -75px;
   max-width: 646px;
   max-height: 568px;
