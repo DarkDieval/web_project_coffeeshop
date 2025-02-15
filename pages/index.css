@@ -94,6 +94,8 @@
 }
 
 .header__image {
+  display: flex;
+  align-items: flex-end;
   right: -75px;
   max-width: 646px;
   max-height: 568px;
