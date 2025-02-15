@@ -101,6 +101,8 @@
 }
 
 .header__footer {
+  position: absolute;
+  bottom: 150px;
 }
 
 .header__paragraph {
