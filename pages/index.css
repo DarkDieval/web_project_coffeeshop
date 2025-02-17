@@ -1,3 +1,4 @@
+/* Stage 2 - 0 Background -->*/
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -5,7 +6,16 @@
   font-family: Arial, Helvetica, sans-serif; /* Fuente principal con alternativas */
   font-size: 16px; /* Tamaño de fuente */
   line-height: 20px; /* Altura de línea */
-  /* Stage 2 - 0 Background -->*/
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
   background-color: #ffffff; /* Color de fondo blanco */
   background-image: url("/images/background_header.svg"); /* Imagen de fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -13,34 +23,29 @@
   background-size: cover; /* Hace que la imagen cubra todo el fondo */
 }
 
-/* Stage 2 - 0 Background -->*/
-.header {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 /*Stage 2 - 1 Header Logo-->*/
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
 }
 
 .nav__logo {
+  display: flex;
+  position: relative;
   width: 105px;
   height: 39px;
-  margin-left: 30px;
+  margin-bottom: 183px;
+  left: 30px;
+  top: 30px;
 }
 
 /*Stage 2 - 2 - 4 nav, nav__links and nav__links-->*/
 .nav__links {
   display: flex;
-  justify-content: flex-end;
   gap: 20px;
   list-style-type: none;
-  margin-right: 80px;
+  margin: 30px 80px 0 0;
+  gap: 20px;
 }
 
 .nav__link {
@@ -48,41 +53,43 @@
   font-size: 16px;
   line-height: 20px;
   color: #000000; /* Ajusta el color según el diseño */
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  background-color: #f0f0f0;
-  color: #000000;
+  text-decoration: none;
 }
 
 /*Stage 2 - 6 - Header Block-->*/
 .header__title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   font-size: 58px;
   line-height: 72px;
   font-weight: 500;
   max-width: 709px;
   letter-spacing: -1px;
-  margin-top: 183px;
-  margin-left: 80px;
+  left: 80px;
 }
 
 .header__title-span {
-  display: block; /* Hace que "Café de especialidad" esté en su propia línea */
+  display: flex; /* Hace que "Café de especialidad" esté en su propia línea */
   font-style: italic; /* Aplica cursiva */
   color: #2f80ed; /* Azul (puedes ajustarlo según el diseño) */
   font-weight: normal;
+  line-height: 72px;
+  font-size: 58px;
 }
 
 /*Stage 2 - 7 - Header Description-->*/
 .header__description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   max-width: 683px;
   margin-top: 28px;
   font-size: 20px;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  margin-left: 80px;
+  left: 80px;
 }
 
 /*Stage 2 - 8 - Header Image-->*/
@@ -91,25 +98,23 @@
   width: 646px;
   height: 568px;
   position: absolute;
-  left: 900px;
+  display: flex;
+  flex-direction: column;
+  top: 124px;
+  right: 5px;
 }
 
 /*Stage 2 - 9 - Header Footer-->*/
-.header__footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-top: auto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 40px;
+.header__footer {
+  color: #6f6f6f;
 }
 
 .header__footer-shedule {
-  text-align: left;
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
 }
 
 /*Stage 2 - 10 - Paragraph-->*/
@@ -119,8 +124,11 @@
 }
 
 .header__paragraph-adress {
-  text-align: right;
-  margin-right: 80px;
+  display: flex;
+  margin-top: auto;
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
 }
 
 /* Stage 2 - 11 - Recipes -->*/
