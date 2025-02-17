@@ -17,7 +17,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: 30px 80px 40px 30px;
+  box-sizing: border-box;
 }
 
 /*Stage 2 - 1 Header Logo-->*/
@@ -25,12 +25,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
 }
 
 .nav__logo {
-  width: 120px;
-  height: auto;
+  width: 105px;
+  height: 39px;
+  margin: 30px 0px 0px 30px;
 }
 
 /*Stage 2 - 2 - 4 nav, nav__links and nav__links-->*/
@@ -39,53 +39,54 @@
   justify-content: flex-end;
   gap: 20px;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin: 30px 80px 20px 0px;
 }
 
 .nav__link {
-  text-decoration: none;
+  font-weight: 500;
   font-size: 16px;
-  color: #333; /* Ajusta el color según el diseño */
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: all 0.3 ease;
+  line-height: 20px;
+  color: #000000; /* Ajusta el color según el diseño */
 }
 
 .nav__link:hover,
 .nav__link:focus {
   background-color: #f0f0f0;
-  color: #000;
+  color: #000000;
 }
 
 /*Stage 2 - 6 - Header Block-->*/
 .header__content {
   display: flex;
-  justify-content: space-between;
-  text-align: left;
-  margin: 0;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: space-between; /* Asegura espacio entre el texto y la imagen */
+  gap: 80px; /* Espaciado entre texto e imagen */
 }
 
 .header__title {
-  font-size: 62px;
-  line-height: 1.2; /* Controla el espacio entre líneas */
-  margin-top: 32px;
+  font-size: 58px;
+  line-height: 72px;
+  font-weight: 500;
   max-width: 709px;
+  margin: 183px 0 0px 80px;
+  letter-spacing: -1px;
 }
 
 .header__title-span {
   display: block; /* Hace que "Café de especialidad" esté en su propia línea */
   font-style: italic; /* Aplica cursiva */
-  margin-bottom: 5px; /* Ajusta la separación con el siguiente texto */
   color: #2f80ed; /* Azul (puedes ajustarlo según el diseño) */
+  font-weight: normal;
 }
 
 /*Stage 2 - 7 - Header Description-->*/
 .header__description {
+  max-width: 683px;
+  margin: 28px 0 0 80px;
   font-size: 20px;
-  line-height: 1.2;
-  margin-top: 32px;
-  max-width: 632px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /*Stage 2 - 8 - Header Image-->*/
@@ -94,38 +95,87 @@
 }
 
 .header__image {
-  display: flex;
-  align-items: flex-end;
-  right: -75px;
-  max-width: 646px;
-  max-height: 568px;
+  width: 646px;
+  height: 568px;
+  margin-top: 124px;
 }
 
+/*Stage 2 - 9 - Header Footer-->*/
 .header__footer-container {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos a los extremos */
-  align-items: center; /* Alinea verticalmente en el centro */
-  padding: 20px; /* Ajusta el espaciado según sea necesario */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-}
-
-.header__footer {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.header__paragraph-Shedule {
-  margin: 5px 0; /* Espaciado entre los párrafos */
+  margin-top: 80px;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 0.7;
+  line-height: 20px;
 }
 
-.header__paragraph {
-  display: flex;
-  justify-content: flex-end;
+.header__footer-shedule {
+  text-align: left;
+  margin: 0px 0px 40px 80px;
 }
 
+/*Stage 2 - 10 - Paragraph-->*/
 .header__paragraph {
+  margin: 5px 0; /* Espaciado entre los párrafos */
+  line-height: 0.7; /* Controla el espacio entre líneas */
+}
+
+.header__paragraph-adress {
   text-align: right;
+  margin: 0px 80px 40px 0px;
+}
+
+/* Stage 2 - 11 - Recipes -->*/
+.recipes {
+  background-color: #0a2850; /* Color de fondo blanco */
+  background-image: url("/images/background_recipes.svg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  color: #ffffff;
+  margin-top: auto;
+  padding: 100px 0 215px;
+}
+
+/* Stage 2 - 12 - Recipes Title-->*/
+.recipes__title {
+  margin: 100px 0px 0px 80px;
+  max-width: 580px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+/* Stage 2 - 13 - Recipes Description-->*/
+.recipes__description {
+  margin: 24px 0px 0px 80px;
+  max-width: 438px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Stage 2 - 15 - Video Content Item-->*/
+.recipes__video {
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Stage 2 - 16 - Video Iframe-->*/
+.recipes__video-item {
+  width: 100%; /* Asegura que el div padre controle el ancho */
+  max-width: 560px; /* Tamaño máximo */
+}
+
+/* Stage 2 - 17 - Video Caption-->*/
+.recipes__video-caption {
+  margin: 24px 0px 215px 0px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 }

@@ -37,12 +37,12 @@
           <img
             src="./images/logo_coffeeshop_dark.svg"
             alt="Logotipo Cafeteria"
-            class="nav_logo"
+            class="nav__logo"
           />
           <!--Stage 2 - 2 - 4 nav, nav__links and nav__links-->
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#">Recetas</a>
+              <a class="nav__link" href="#recipes">Recetas</a>
             </li>
             <li>
               <a class="nav__link" href="#">Reservar una mesa</a>
@@ -76,23 +76,65 @@
         </div>
         <!--Stage 2 - 9 - Header Footer-->
         <div class="header__footer-container">
-          <div class="header__footer">
-            <p class="header__paragraph-Shedule">Horario:</p>
-            <p class="header__paragraph-Shedule">
+          <div class="header__footer-shedule">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
               Lunes a Viernes (de 10:00h a 19:00h)
             </p>
-            <p class="header__paragraph-Shedule">
+            <p class="header__paragraph">
               Sábados y Domingos (de 11:00h a 18:00h)
             </p>
           </div>
           <!--Stage 2 - 10 - Header Paragraph-->
-          <div class="header__paragraph">
+          <div class="header__paragraph-adress">
             <p>Avenida del Éxito 200, Ciudad Triple Peaks</p>
           </div>
         </div>
       </header>
       <main class="content">
-        <section class="recipes"></section>
+        <!--Stage 2 - 11 - Recipes-->
+        <section class="recipes" id="recipes">
+          <!--Stage 2 - 12 - Title-->
+          <h2 class="recipes__title">Recetas</h2>
+          <!--Stage 2 - 13 - Description-->
+          <p class="recipes__description">
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks.
+          </p>
+          <!--Stage 2 - 14 - Video Content-->
+          <div class="recipes__video">
+            <!--Stage 2 - 15 - Video Content Item-->
+            <div class="recipes__video-item">
+              <!--Stage 2 - 16 - Video Iframe-->
+              <iframe
+                src="https://www.youtube.com/embed/EVysT9v5r6Q?si=omXa0xjP_sU8Ghzd"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <!--Stage 2 - 17 - Video Caption-->
+              <div class="recipes__video-caption">
+                Receta en Aeropress ~5 min
+              </div>
+            </div>
+            <!--Stage 2 - 15 - Video Content Item-->
+            <div class="recipes__video-item">
+              <!--Stage 2 - 16 - Video Iframe-->
+              <iframe
+                src="https://www.youtube.com/embed/st571DYYTR8?si=hk7AbbYQfDdPi_-a"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <!--Stage 2 - 17 - Video Caption-->
+              <div class="recipes__video-caption">
+                Receta en cafetera francesa ~15 min
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="reservation"></section>
       </main>
       <footer class="footer"></footer>
