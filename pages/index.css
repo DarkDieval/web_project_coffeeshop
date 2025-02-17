@@ -150,7 +150,7 @@
 }
 
 /* Stage 2 - 13 - Recipes Description-->*/
-.recipes__description {
+.recipes__subtitle {
   margin: 24px 0px 0px 80px;
   max-width: 438px;
   font-weight: normal;
@@ -159,7 +159,7 @@
 }
 
 /* Stage 2 - 15 - Video Content Item-->*/
-.recipes__video {
+.recipes__videos {
   margin: 80px;
   display: flex;
   justify-content: center;
