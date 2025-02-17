@@ -1,7 +1,7 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0 auto; /* Esto lo centra horizontalmente */
+  margin: auto; /* Esto lo centra horizontalmente */
   font-family: Arial, Helvetica, sans-serif; /* Fuente principal con alternativas */
   font-size: 16px; /* Tamaño de fuente */
   line-height: 20px; /* Altura de línea */
@@ -17,7 +17,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  position: relative;
 }
 
 /*Stage 2 - 1 Header Logo-->*/
@@ -25,12 +25,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
 }
 
 .nav__logo {
   width: 105px;
   height: 39px;
-  margin: 30px 0px 0px 30px;
+  margin-left: 30px;
 }
 
 /*Stage 2 - 2 - 4 nav, nav__links and nav__links-->*/
@@ -39,7 +40,7 @@
   justify-content: flex-end;
   gap: 20px;
   list-style-type: none;
-  margin: 30px 80px 20px 0px;
+  margin-right: 80px;
 }
 
 .nav__link {
@@ -61,8 +62,9 @@
   line-height: 72px;
   font-weight: 500;
   max-width: 709px;
-  margin: 183px 0 0px 80px;
   letter-spacing: -1px;
+  margin-top: 183px;
+  margin-left: 80px;
 }
 
 .header__title-span {
@@ -75,11 +77,12 @@
 /*Stage 2 - 7 - Header Description-->*/
 .header__description {
   max-width: 683px;
-  margin: 28px 0 0 80px;
+  margin-top: 28px;
   font-size: 20px;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+  margin-left: 80px;
 }
 
 /*Stage 2 - 8 - Header Image-->*/
@@ -87,10 +90,9 @@
 .header__image {
   width: 646px;
   height: 568px;
-  margin-top: 124px;
-  position: relative;
+  position: absolute;
   left: 900px;
-  bottom: 500px;
+  margin-top: 124px;
 }
 
 /*Stage 2 - 9 - Header Footer-->*/
@@ -99,14 +101,16 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 40px;
 }
 
 .header__footer-shedule {
   text-align: left;
-  margin: 0px 0px 40px 80px;
+  margin-left: 80px;
 }
 
 /*Stage 2 - 10 - Paragraph-->*/
@@ -117,7 +121,7 @@
 
 .header__paragraph-adress {
   text-align: right;
-  margin: 0px 80px 40px 0px;
+  margin-right: 80px;
 }
 
 /* Stage 2 - 11 - Recipes -->*/
