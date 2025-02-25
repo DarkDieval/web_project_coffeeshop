@@ -281,7 +281,7 @@
   opacity: 0.7;
 }
 
-.form__checkbox {
+.form__reservation-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
