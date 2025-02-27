@@ -1,0 +1,62 @@
+/* Stage 2 - 11 - Recipes -->*/
+.recipes {
+  background-color: #0a2850; /* Color de fondo blanco */
+  background-image: url("/images/background_recipes.svg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  color: #ffffff;
+  margin-top: auto;
+  padding: 100px 0 215px;
+  height: 100vh;
+}
+
+/* Stage 2 - 12 - Recipes Title-->*/
+.recipes__title {
+  max-width: 580px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  padding-top: 100px;
+  margin-left: 80px;
+}
+
+/* Stage 2 - 13 - Recipes Description-->*/
+.recipes__subtitle {
+  display: flex;
+  margin: 24px 0px 0px 80px;
+  max-width: 438px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recipes__iframe {
+  width: 450px;
+  height: 200px;
+  border: 0;
+}
+
+/* Stage 2 - 15 - Video Content Item-->*/
+.recipes__videos {
+  display: flex;
+  margin: 80px;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Stage 2 - 16 - Video Iframe-->*/
+.recipes__video-item {
+  display: flex;
+  width: 100%; /* Asegura que el div padre controle el ancho */
+  max-width: 560px; /* Tamaño máximo */
+}
+
+/* Stage 2 - 17 - Video Caption-->*/
+.recipes__video-caption {
+  display: flex;
+  margin: 24px 0px 215px 0px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}

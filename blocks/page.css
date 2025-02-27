@@ -1,0 +1,10 @@
+/* Stage 2 - 0 Background -->*/
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: auto; /* Esto lo centra horizontalmente */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente principal con alternativas */
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 20px; /* Altura de línea */
+  color: #000000;
+}

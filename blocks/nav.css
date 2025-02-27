@@ -1,0 +1,32 @@
+/*Stage 2 - 1 Header Logo-->*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  display: flex;
+  position: relative;
+  width: 105px;
+  height: 39px;
+  margin-bottom: 183px;
+  left: 30px;
+  top: 30px;
+}
+
+/*Stage 2 - 2 - 4 nav, nav__links and nav__links-->*/
+.nav__links {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 30px 80px 0 0;
+  gap: 20px;
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000; /* Ajusta el color según el diseño */
+  text-decoration: none;
+}
