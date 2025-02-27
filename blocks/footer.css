@@ -57,10 +57,11 @@
   flex-direction: column;
 }
 
-.footer_list-item {
+.footer__list-item {
   align-items: center;
   display: flex;
   margin-bottom: 16px;
+  list-style: none;
 }
 
 .footer__social-link {
